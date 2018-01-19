@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+#base, article, div, footer, header, main, nav, section {
+	align-items: stretch;
+	border: 0 solid #000;
+	position: relative;
+}
+
+head, body {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+	background: #FAFAFA;
+	margin: 0;
+}
+
+#base, body, html {
+	height: 100%;
+}
+
+#base {
+	z-index: 0;
+}
+
+.base2 {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.banner {
+	z-index: 1;
+	padding: 0 10px;
+	background-color: #d10869;
+	overflow: hidden;
+	display: block;
+	height: 51px;
+}
+article {
+	width: 935px;
+	height: 751px;
+	margin: auto;
+}
+
+#phone img {
+	width: 388px;
+	height: auto;
+	margin: auto;
+}
+
+#phone {
+	float: all;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+
+
+.column {
+    float: right;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 875px) {
+
+.column {
+	float: none;
+	width: 100%;
+	margin: auto;
+}
+#phone {
+    display: none;
+}
+#login {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+}
